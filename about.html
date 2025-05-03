@@ -485,14 +485,13 @@
                         Through these roles, I have developed strong skills in PHP, Java, HTML, and Dart programming
                         languages. </p>
                     <p> In addition, I have organizational experience as a staff member in the Internal Affairs Division
-                        of
-                        the Student Association of the Information Technology Department at Politeknik Negeri Jember.
+                        of Himpunan Mahasiswa Jurusan Teknologi Informasi at Politeknik Negeri Jember.
                     </p>
 
                     <div class="stats">
                         <div class="stat-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200"
                             onclick="showProjects()">
-                            <h3>4</h3>
+                            <h3>3</h3>
                             <p>Projects Completed</p>
                         </div>
                         <div class="stat-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400"
@@ -611,28 +610,33 @@
                         title: "Teh Poci MyAdmin",
                         image: "img/dashboard.PNG",
                         description: "A full-stack Desktop Application with Java Language Programming",
-                        technologies: ["Java", "MySQL"]
+                        technologies: ["Java", "MySQL"],
+                        link: "https://github.com/shazidian/A.ProjekUMKM"
                     },
                     {
                         title: "Znakepaymaster",
                         image: "img/photo.jpg",
                         description: "Responsive Desktop Application with RFID and Barcode Scan",
-                        technologies: ["Java", "MySQL"]
+                        technologies: ["Java", "MySQL"],
+                        link: "https://drive.google.com/drive/folders/1U5yxEvyJQyhI0ru8pLiHrU52eHRU_eZO?usp=drive_link"
                     },
                     {
                         title: "E-LaDes",
                         image: "img/Screenshot (91).png",
                         description: "Web & Mobile Application",
-                        technologies: ["PHP", "HTML", "Node.js", "Java"]
+                        technologies: ["PHP", "HTML", "Node.js", "Java"],
+                        link: "https://elades.pbltifnganjuk.com/"
                     }
                     // Add more projects as needed
                 ];
 
                 return projects.map(project => `
+                <a href="${project.link}" target="_blank" style="text-decoration: none; color: inherit;">
                 <div class="content-card" data-aos="fade-up">
                     <div class="card-image">
                         <img src="${project.image}" alt="${project.title}">
                     </div>
+                    
                     <div class="card-info">
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
@@ -653,30 +657,37 @@
                         title: "Frontend Developer",
                         company: "E-LaDes",
                         period: "Januari 2025 - Present",
-                        description: "Leading frontend development team and implementing modern web and mobile application solutions"
+                        description: "Leading frontend development team and implementing modern web and mobile application solutions",
+                        link: "https://github.com/ShintaMaria/ELADES_WEB"
+
                     },
                     {
                         title: "Quality Assurance",
                         company: "Nganjuk Visit",
                         period: "Agustus 2024 - Desember 2024",
-                        description: "Testing responsive websites and web applications of Nganjuk Visit"
+                        description: "Testing responsive websites and web applications of Nganjuk Visit",
+                        link: "https://drive.google.com/folderview?id=1661hjPcBtRMCmpno5qPvchfqnFyvqUTh"
                     },
                     {
                         title: "Backend Developer",
                         company: "Znakepaymaster",
                         period: "Januari 2024 - Mei 2024",
-                        description: "Leading database and backend programming responsive desktop applications "
+                        description: "Leading database and backend programming responsive desktop applications",
+                        link: "https://drive.google.com/drive/folders/1U5yxEvyJQyhI0ru8pLiHrU52eHRU_eZO?usp=drive_link"
+
                     },
                     {
                         title: "Frontend Developer",
                         company: "Teh Poci MyAdmin",
                         period: "Agustus 2023 - Desember 2023",
-                        description: "Leading frontend development programming responsive desktop applications "
+                        description: "Leading frontend development programming responsive desktop applications ",
+                        link: "https://github.com/shazidian/A.ProjekUMKM"
                     }
                     // Add more experiences as needed
                 ];
 
                 return experiences.map(exp => `
+                <a href="${exp.link}" target="_blank" style="text-decoration: none; color: inherit;">
                 <div class="content-card" data-aos="fade-up">
                     <div class="card-info">
                         <h3>${exp.title}</h3>
@@ -735,50 +746,20 @@
             `).join('');
             }
 
-            // Fungsi pembantu untuk menghasilkan kartu client
-            // function generateClientCards() {
-            //     const clients = [
-            //         {
-            //             name: "Ell Udin",
-            //             company: "Innovation Corp",
-            //             image: "img/zoro.jpg",
-            //             testimonial: "Outstanding work on our company website redesign!"
-            //         },
-            //         {
-            //             name: "Ell Ucup",
-            //             company: "Tech Startup",
-            //             image: "img/zoro.jpg",
-            //             testimonial: "Delivered our app ahead of schedule with excellent quality"
-            //         }
-            //         // Add more clients as needed
-            //     ];
 
-            //     return clients.map(client => `
-            //     <div class="content-card" data-aos="fade-up">
-            //         <div class="card-image">
-            //             <img src="${client.image}" alt="${client.name}">
-            //         </div>
-            //         <div class="card-info">
-            //             <h3>${client.name}</h3>
-            //             <h4>${client.company}</h4>
-            //             <p class="client-testimonial">"${client.testimonial}"</p>
-            //         </div>
-            //     </div>
-            // `).join('');
-            // }
-
-            // Fungsi pembantu untuk menghasilkan kartu award
             function generateAwardCards() {
                 const awards = [
                     {
                         title: "Biro Internal PSDKU NGANJUK",
                         organization: "Himpunan Mahasiswa Jurusan Teknologi Informasi",
-                        description: "Sebagai penghubung informasi antara kampus Jember dengan kampus PSDKU NGANJUK"
+                        description: "Sebagai penghubung informasi antara kampus Jember dengan kampus PSDKU NGANJUK",
+                        link: "https://drive.google.com/file/d/1bdxu8QOUJuYMjKoAEL9tIgEiHMpeUUNk/view?usp=sharing"
                     }
                     // Add more awards as needed
                 ];
 
                 return awards.map(award => `
+                <a href="${award.link}" target="_blank" style="text-decoration: none; color: inherit;">
                 <div class="content-card" data-aos="fade-up">
                     <div class="card-info">
                        
